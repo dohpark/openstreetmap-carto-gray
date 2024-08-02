@@ -1,9 +1,9 @@
-@breakwater-color: #aaa; /* Also for groyne */
-@dam: #adadad;
-@dam-line: #444444;
-@weir-line: #aaa;
-@lock-gate: #aaa;
-@lock-gate-line: #aaa;
+@breakwater-color: #c0c0c0; /* Light gray for breakwater and groyne */
+@dam: #d0d0d0; /* Very light gray for dam */
+@dam-line: #808080; /* Medium gray for dam line */
+@weir-line: #b0b0b0; /* Light gray for weir line */
+@lock-gate: #b0b0b0; /* Light gray for lock gate */
+@lock-gate-line: #b0b0b0; /* Light gray for lock gate line */
 
 #water-barriers-point, #water-barriers-line, #water-barriers-poly {
   [waterway = 'dam'] {

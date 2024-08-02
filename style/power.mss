@@ -1,4 +1,4 @@
-@power-line-color: #888;
+@power-line-color: #b0b0b0; /* Light gray for power lines */
 
 #power-line {
   [zoom >= 14] {
@@ -48,7 +48,7 @@
   }
   [power = 'pole'][zoom >= 16] {
     marker-file: url('symbols/square.svg');
-    marker-fill: #928f8f;
+    marker-fill: #d0d0d0; /* Light gray for poles */
     marker-width: 3;
   }
 }

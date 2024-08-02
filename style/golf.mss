@@ -1,4 +1,4 @@
-@golf-color: #666;
+@golf-color: #888; /* Light gray for golf-related features */
 
 #landcover[zoom >= 12] {
   ::high-zoom[zoom >= 12] {
@@ -6,15 +6,15 @@
     [feature = 'golf_fairway'],
     [feature = 'golf_rough'],
     [feature = 'golf_driving_range'] {
-      polygon-fill: @grass;
+      polygon-fill: #dcdcdc; /* Light gray-green for grass */
     }
   }
   ::high-zoom[zoom >= 13] {
     [feature = 'golf_green'] {
-      polygon-fill: @pitch;
+      polygon-fill: #c0c0c0; /* Light gray for pitch */
     }
     [feature = 'golf_bunker'] {
-      polygon-fill: @sand;
+      polygon-fill: #e0e0e0; /* Very light gray for sand */
     }
   }
   ::high-zoom[zoom >= 15] {

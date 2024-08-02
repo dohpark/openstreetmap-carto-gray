@@ -1,16 +1,16 @@
-@station-color: #7981b0;
-@station-text: darken(saturate(@station-color, 15%), 10%);
+@station-color: #b0b3d4; /* Soft light grayish-blue for station markers */
+@station-text: #7a7da2; /* Darker, muted tone for station text */
 
 #stations {
   [railway = 'subway_entrance'][zoom >= 18] {
     marker-file: url('symbols/amenity/entrance.svg');
-    marker-fill: @transportation-icon;
+    marker-fill: @station-color;
     marker-clip: false;
     [zoom >= 19] {
       text-name: [ref];
       text-face-name: @book-fonts;
       text-size: 10;
-      text-fill: @transportation-text;
+      text-fill: @station-text;
       text-dy: 10;
       text-halo-radius: @standard-halo-radius * 1.5;
       text-halo-fill: @standard-halo-fill;
@@ -30,7 +30,7 @@
       marker-width: 6;
     }
     [zoom >= 14][station !='subway'],
-    [zoom >=15] {
+    [zoom >= 15] {
       text-name: "[name]";
       text-face-name: @bold-fonts;
       text-size: 10;

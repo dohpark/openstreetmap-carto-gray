@@ -1,6 +1,6 @@
-@water-text: #4d80b3;
-@glacier: #ddecec;
-@glacier-line: #9cf;
+@water-text: #b0b0b0; /* Light gray for waterway text */
+@glacier: #e6f2f2; /* Very light cyan-gray for glaciers */
+@glacier-line: #c4e0e0; /* Soft cyan for glacier lines */
 
 @waterway-text-repeat-distance: 200;
 
@@ -134,7 +134,7 @@
       background/line-join: miter;
       water/line-cap: butt;
       water/line-join: miter;
-      tunnelfill/line-color: #f3f7f7;
+      tunnelfill/line-color: #e6f2f2; /* Very light cyan-gray for tunnel fill */
       tunnelfill/line-width: 1;
       [zoom >= 14] { tunnelfill/line-width: 2; }
       [zoom >= 15] { tunnelfill/line-width: 3; }
@@ -191,7 +191,7 @@
         water/line-dasharray: 4,2;
         tunnelfill/line-width: 1;
         [waterway = 'stream'] { tunnelfill/line-width: 2; }
-        tunnelfill/line-color: #f3f7f7;
+        tunnelfill/line-color: #e6f2f2; /* Very light cyan-gray for tunnel fill */
       }
     }
   }
@@ -282,7 +282,6 @@
     }
   }
 }
-
 
 #text-poly-low-zoom[zoom < 10],
 #text-point[zoom >= 10] {

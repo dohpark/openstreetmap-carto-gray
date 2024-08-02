@@ -1,14 +1,14 @@
-@building-fill: #d9d0c9;  // Lch(84, 5, 68)
-@building-line: darken(@building-fill, 15%);  // Lch(70, 9, 66)
-@building-low-zoom: darken(@building-fill, 4%);
+@building-fill: #e0e0e0;  /* Light gray for building fill */
+@building-line: #b3b3b3;  /* Darker gray for building outline */
+@building-low-zoom: #d7d7d7;  /* Slightly darker gray for low zoom level */
 
-@building-major-fill: darken(@building-fill, 10%);  // Lch(75, 8, 67)
-@building-major-line: darken(@building-major-fill, 15%);  // Lch(61, 13, 65)
-@building-major-z15: darken(@building-major-fill, 5%);  // Lch(70, 9, 66)
-@building-major-z14: darken(@building-major-fill, 10%);  // Lch(66, 11, 65)
+@building-major-fill: #c8c8c8;  /* Dark gray for major buildings */
+@building-major-line: #999999;  /* Darker gray for major building outline */
+@building-major-z15: #c2c2c2;  /* Slightly darker gray for z15 major buildings */
+@building-major-z14: #bfbfbf;  /* Dark gray for z14 major buildings */
 
-@entrance-permissive: darken(@building-line, 15%);
-@entrance-normal: @building-line;
+@entrance-permissive: #969696;  /* Gray for permissive entrances */
+@entrance-normal: @building-line;  /* Using the building outline color for normal entrances */
 
 #buildings {
   [zoom >= 14] {
@@ -39,7 +39,7 @@
 
 #bridge {
   [zoom >= 12] {
-    polygon-fill: #B8B8B8;
+    polygon-fill: #B8B8B8;  /* Light gray for bridges */
   }
 }
 
