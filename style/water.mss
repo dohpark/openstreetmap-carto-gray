@@ -1,6 +1,6 @@
-@water-text: #4d80b3;
-@glacier: #ddecec;
-@glacier-line: #9cf;
+@water-text: #a0a0a0; /* Light gray for waterway text */
+@glacier: #d0d0d0; /* Light gray for glaciers */
+@glacier-line: #b0b0b0; /* Light gray for glacier lines */
 
 @waterway-text-repeat-distance: 200;
 
@@ -87,7 +87,7 @@
 
     [bridge = 'yes'] {
       [zoom >= 14] {
-        bridgecasing/line-color: black;
+        bridgecasing/line-color: #606060; /* Medium gray for bridge casing */
         bridgecasing/line-join: round;
         bridgecasing/line-width: 6;
         [zoom >= 15] { bridgecasing/line-width: 7; }
@@ -134,7 +134,7 @@
       background/line-join: miter;
       water/line-cap: butt;
       water/line-join: miter;
-      tunnelfill/line-color: #f3f7f7;
+      tunnelfill/line-color: #e0e0e0; /* Light gray for tunnel fill */
       tunnelfill/line-width: 1;
       [zoom >= 14] { tunnelfill/line-width: 2; }
       [zoom >= 15] { tunnelfill/line-width: 3; }
@@ -157,7 +157,7 @@
       water/line-color: @water-color;
 
       [bridge = 'yes'] {
-        bridgecasing/line-color: black;
+        bridgecasing/line-color: #606060; /* Medium gray for bridge casing */
         bridgecasing/line-join: round;
         bridgecasing/line-width: 4;
         [waterway = 'stream'][zoom >= 15] { bridgecasing/line-width: 4; }
@@ -191,23 +191,22 @@
         water/line-dasharray: 4,2;
         tunnelfill/line-width: 1;
         [waterway = 'stream'] { tunnelfill/line-width: 2; }
-        tunnelfill/line-color: #f3f7f7;
+        tunnelfill/line-color: #e0e0e0; /* Light gray for tunnel fill */
       }
     }
   }
-
 }
 
 #water-lines-text {
   [lock = 'yes'][zoom >= 17] {
-      text-name: "[lock_name]";
-      text-face-name: @oblique-fonts;
-      text-placement: line;
-      text-fill: @water-text;
-      text-spacing: 400;
-      text-size: 10;
-      text-halo-radius: @standard-halo-radius;
-      text-halo-fill: @standard-halo-fill;
+    text-name: "[lock_name]";
+    text-face-name: @oblique-fonts;
+    text-placement: line;
+    text-fill: @water-text;
+    text-spacing: 400;
+    text-size: 10;
+    text-halo-radius: @standard-halo-radius;
+    text-halo-fill: @standard-halo-fill;
   }
 
   [lock != 'yes'][int_tunnel != 'yes'] {
@@ -282,7 +281,6 @@
     }
   }
 }
-
 
 #text-poly-low-zoom[zoom < 10],
 #text-point[zoom >= 10] {

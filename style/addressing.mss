@@ -1,12 +1,12 @@
-/* Features related to (postal) adresses: */
+/* Features related to (postal) addresses: */
 
-@address-color: #666;
+@address-color: #999; /* Light gray for address elements */
 
 #interpolation {
   [zoom >= 17] {
     line-color: @address-color;
     line-width: 1;
-    line-dasharray: 2,4;
+    line-dasharray: 2, 4;
   }
 }
 
@@ -18,7 +18,6 @@
       ["addr_housename" != null] {
         text-name: [addr_housenumber] + "\n" + [addr_housename];
       }
-
     }
     text-face-name: @book-fonts;
     text-fill: @address-color;
@@ -50,10 +49,10 @@
       }
     }
     [zoom >= 20] {
-        text-size: 11;
-        text-wrap-width: 22; // 2.0 em
-        text-line-spacing: -1.65; // -0.15 em
-        text-margin: 3.3; // 0.3 em
+      text-size: 11;
+      text-wrap-width: 22; // 2.0 em
+      text-line-spacing: -1.65; // -0.15 em
+      text-margin: 3.3; // 0.3 em
     }
   }
 }
@@ -66,7 +65,7 @@ no official postal addresses) */
   [zoom >= 17] {
     text-name: "[name]";
     text-face-name: @book-fonts;
-    text-fill: #444;
+    text-fill: #666; /* Slightly darker gray for building names */
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
     text-size: 11;

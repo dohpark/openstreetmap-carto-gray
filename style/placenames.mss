@@ -1,8 +1,8 @@
-@placenames: #222;
-@placenames-light: #777777;
-@country-labels: darken(@admin-boundaries-narrow, 10%);
-@state-labels: desaturate(@admin-boundaries-narrow, 5%);
-@county-labels: darken(@admin-boundaries-wide, 5%);
+@placenames: #4a4a4a; /* Medium-dark gray for general place names */
+@placenames-light: #7a7a7a; /* Lighter gray for secondary place names */
+@country-labels: #6a6a6a; /* Medium gray for country labels */
+@state-labels: #808080; /* Medium-light gray for state labels */
+@county-labels: #595959; /* Dark gray for county labels */
 
 #country-names {
   [zoom >= 3][zoom < 5][way_pixels > 1000],
