@@ -106,7 +106,7 @@
         center/line-join: round;
         [substance = 'water'] { center/line-color: @water-color; }
         [substance = 'gas'] { center/line-color: #e0e0e0; } /* Very light gray for gas pipelines */
-        [substance = 'oil'] { center/line-color: #dcd2b2; } /* Light beige for oil pipelines */
+        [substance = 'oil'] { center/line-color: #cacaca; } /* Light beige for oil pipelines */
       }
       [zoom >= 18] {
         line/line-width: 3;

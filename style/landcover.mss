@@ -494,7 +494,7 @@
 
   [feature = 'landuse_landfill'] {
     [zoom >= 10] {
-      polygon-fill: #b6b592;
+      polygon-fill: #949494;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -621,7 +621,7 @@
   [feature = 'amenity_police'][zoom >= 8][way_pixels > 900],
   [feature = 'amenity_fire_station'][zoom >= 13],
   [feature = 'amenity_police'][zoom >= 13] {
-    polygon-fill: #F3E3DD;
+    polygon-fill: #D9D9D9;
     line-color: #f5f5f5;
     line-opacity: 0.24;
     line-width: 1.0;
@@ -653,7 +653,7 @@
   }
 
   [feature = 'aeroway_apron'][zoom >= 10] {
-    polygon-fill: #dadae0;
+    polygon-fill: #D6D6D6;
     [way_pixels >= 4]  { polygon-gamma: 0.75; }
     [way_pixels >= 64] { polygon-gamma: 0.3;  }
   }
@@ -828,11 +828,11 @@
 #landuse-overlay {
   [landuse = 'military'][zoom >= 8][way_pixels > 900],
   [landuse = 'military'][zoom >= 13] {
-    polygon-fill: #ff5555;
+    polygon-fill: #979797;
     polygon-opacity: 0.08;
     polygon-pattern-file: url('patterns/military_red_hatch.svg');
     polygon-pattern-alignment: global;
-    line-color: #ff5555;
+    line-color: #979797;
     line-opacity: 0.24;
     line-width: 1.0;
     line-offset: -0.5;
@@ -843,11 +843,11 @@
   }
 
   [military = 'danger_area'][zoom >= 9] {
-    polygon-fill: #ff5555;
+    polygon-fill: #979797;
     polygon-opacity: 0.1;
     polygon-pattern-file: url('patterns/danger_red_hatch.svg');
     polygon-pattern-alignment: global;
-    line-color: #ff5555;
+    line-color: #979797;
     line-opacity: 0.2;
     line-width: 2;
     line-offset: -1.0;
@@ -932,7 +932,7 @@
   [tourism = 'theme_park'][zoom >= 17] {
     a/line-width: 1;
     a/line-offset: -0.5;
-    a/line-color: #660033;
+    a/line-color: #808080;
     a/line-opacity: 0.5;
     a/line-join: round;
     a/line-cap: round;
@@ -940,7 +940,7 @@
     [way_pixels >= 60] {
       b/line-width: 4;
       b/line-offset: -2;
-      b/line-color: #660033;
+      b/line-color: #808080;
       b/line-opacity: 0.3;
       b/line-join: round;
       b/line-cap: round;
