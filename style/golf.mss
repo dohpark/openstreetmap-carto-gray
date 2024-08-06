@@ -6,7 +6,7 @@
     [feature = 'golf_fairway'],
     [feature = 'golf_rough'],
     [feature = 'golf_driving_range'] {
-      polygon-fill: #dcdcdc; /* Light gray-green for grass */
+      polygon-fill: #dcdcdc; /* Light gray for grass */
     }
   }
   ::high-zoom[zoom >= 13] {

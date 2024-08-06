@@ -1,7 +1,7 @@
-@placenames: #444444; /* Dark gray for general place names */
-@placenames-light: #888888; /* Lighter gray for secondary place names */
-@country-labels: #666666; /* Medium gray for country labels */
-@state-labels: #7a7a7a; /* Medium desaturated gray for state labels */
+@placenames: #4a4a4a; /* Medium-dark gray for general place names */
+@placenames-light: #7a7a7a; /* Lighter gray for secondary place names */
+@country-labels: #6a6a6a; /* Medium gray for country labels */
+@state-labels: #808080; /* Medium-light gray for state labels */
 @county-labels: #595959; /* Dark gray for county labels */
 
 #country-names {

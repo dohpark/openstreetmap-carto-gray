@@ -1,27 +1,27 @@
-@marina-text: #576ddf; // also swimming_pool
-@wetland-text: darken(#4aa5fa, 25%); /* Also for mud */
-@shop-icon: #ac39ac;
-@shop-text: #939;
-@transportation-icon: #0092da;
-@transportation-text: #0066ff;
+@marina-text: #5e5e5e; // also swimming_pool
+@wetland-text: #3b3b3b; /* Also for mud */
+@shop-icon: #8c8c8c;
+@shop-text: #777777;
+@transportation-icon: #7a7a7a;
+@transportation-text: #666666;
 @accommodation-icon: @transportation-icon;
 @accommodation-text: @transportation-text;
-@airtransport: #8461C4; //also ferry_terminal
-@health-color: #BF0000;
-@amenity-brown: #734a08;
-@gastronomy-icon: #C77400;
-@gastronomy-text: darken(@gastronomy-icon, 5%);
+@airtransport: #7a7a7a; //also ferry_terminal
+@health-color: #808080;
+@amenity-brown: #7d7d7d;
+@gastronomy-icon: #858585;
+@gastronomy-text: #7e7e7e;
 @memorials: @amenity-brown;
 @culture: @amenity-brown;
 @public-service: @amenity-brown;
-@office: #4863A0;
+@office: #737373;
 @man-made-icon: #666666;
 @advertising-grey: @man-made-icon;
 @barrier-icon: #3f3f3f;
-@landform-color: #d08f55;
-@leisure-green: darken(@park, 60%);
-@protected-area: #008000;
-@aboriginal: #82643a;
+@landform-color: #9a9a9a;
+@leisure-green: #595959;
+@protected-area: #5e5e5e;
+@aboriginal: #7a7a7a;
 @religious-icon: #000000;
 
 @landcover-font-size: 10;
@@ -1392,7 +1392,7 @@
 
   [feature = 'natural_volcano'][zoom >= 11] {
     marker-file: url('symbols/natural/peak.svg');
-    marker-fill: #d40000;
+    marker-fill: #b2b2b2;
     marker-clip: false;
   }
 
@@ -1410,7 +1410,7 @@
 
   [feature = 'natural_spring'][zoom >= 14] {
     marker-file: url('symbols/natural/spring.svg');
-    marker-fill: #7abcec;
+    marker-fill: #979797;
     marker-clip: false;
   }
 
@@ -1832,7 +1832,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: #000033;
+    text-fill: #1a1a1a;
     text-dy: 12;
     text-face-name: @standard-font;
     text-halo-radius: @standard-halo-radius;
@@ -1862,7 +1862,7 @@
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
     text-fill: darken(@landform-color, 30%);
-    [feature = 'natural_volcano'] { text-fill: #d40000; }
+    [feature = 'natural_volcano'] { text-fill: #4d4d4d; }
     [feature = 'mountain_pass'] { text-fill: @transportation-text; }
     text-dy: 7;
     [feature = 'tourism_viewpoint'] { text-dy: 11; }
@@ -3122,7 +3122,7 @@
   [natural = 'tree']::trunk {
     [zoom >= 18] {
       trunk/opacity: 0.4;
-      trunk/marker-fill: #6b8d5e; // Same opacity and color as forest svg patterns
+      trunk/marker-fill: #777777; // Same opacity and color as forest svg patterns
       trunk/marker-allow-overlap: true;
       trunk/marker-line-width: 0;
       trunk/marker-width: 2;

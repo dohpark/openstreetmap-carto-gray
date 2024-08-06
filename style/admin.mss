@@ -1,6 +1,6 @@
-@admin-boundaries: #8d618b; // Lch(47,30,327)
-@admin-boundaries-narrow: #845283; // Lch(42,35,327)
-@admin-boundaries-wide: #a37da1; // Lch(57,25,327)
+@admin-boundaries: #808080; /* Gray for admin boundaries */
+@admin-boundaries-narrow: #6d6d6d; /* Darker gray for narrow admin boundaries */
+@admin-boundaries-wide: #9a9a9a; /* Lighter gray for wide admin boundaries */
 
 /* For performance reasons, the admin border layers are split into three groups
 for low, middle and high zoom levels.

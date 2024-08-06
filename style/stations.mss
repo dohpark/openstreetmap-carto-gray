@@ -1,5 +1,5 @@
-@station-color: #b0b3d4; /* Soft light grayish-blue for station markers */
-@station-text: #7a7da2; /* Darker, muted tone for station text */
+@station-color: #b0b0b0; /* Light gray for station markers */
+@station-text: #7a7a7a; /* Dark gray for station text */
 
 #stations {
   [railway = 'subway_entrance'][zoom >= 18] {
